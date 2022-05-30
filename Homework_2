@@ -1,0 +1,162 @@
+//Задание №1
+
+#include <windows.h>
+#include <iostream>             
+
+using namespace std;
+
+int main()
+{
+	int i1 = GetConsoleCP();
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int  a;
+	system("cls");
+	printf("Введите число:\n");
+	scanf("%d", &a);
+	if (a%2==0)
+	printf("Число чётное\n");
+	else
+	printf("Число не чётное\n");
+
+	SetConsoleCP(i1);
+	SetConsoleOutputCP(i1);
+
+	return 0;
+}
+
+//Задание №2
+
+#include <windows.h>
+#include <iostream>             
+
+int main()
+{
+	int i1 = GetConsoleCP();
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int  a;
+	system("cls");
+	printf("Введите число от 1 до 100 \n");
+	scanf("%d", &a);
+
+	if (a > 9)
+	{
+	  printf("Две цифры \n");
+	  printf("Сумма: %d \n", a / 10 + a % 10);
+	
+	}
+	else
+	{
+		printf("Одна цифра \n");
+		printf("Сумма: %d \n", a);
+	}
+
+	SetConsoleCP(i1);
+	SetConsoleOutputCP(i1);
+
+	return 0;
+}
+
+//Задание №3
+
+#include <windows.h>
+#include <iostream>             
+
+int main()
+{
+	int i1 = GetConsoleCP();
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int  menu;
+	double a, b, c = 2.54;
+	do {
+		system("cls");
+		printf("1) Дюймы в сантиметры \n");
+		printf("2) Сантиметры в дюймы \n");
+		printf("3) Выход \n");
+		scanf("%d", &menu);
+
+		switch (menu) {
+		case 1:
+			printf("Введите значение в дюймах \n");
+			scanf("%lf", &a);
+			b = a * c;
+			printf("%5.2f дюймов будет %5.2f сантиметров \n", a, b);
+			system("pause");
+			break;
+		case 2:
+			printf("Введите значение в сантиметрах \n");
+			scanf("%lf", &a);
+			b = a / c;
+			printf("%5.2f сантиметров будет %5.2f дюймов \n", a, b);
+			system("pause");
+			break;
+		default:
+                  break;
+		}
+	} while (menu > 0 &&  menu<3);
+
+	SetConsoleCP(i1);
+	SetConsoleOutputCP(i1);
+	return 0;
+}
+
+//Задание №4
+
+#include <windows.h>
+#include <iostream>             
+
+int main()
+{
+	int i1 = GetConsoleCP();
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int  a;
+	system("cls");
+	printf("Как заканчивается русская поговорка: «Раз на раз…»?\n1) Не меняется\n2) Не приходится\n3) Не перемножается\n");
+	scanf("%d", &a);
+	if (a == 2)
+	  {
+		printf("Правильно\n");
+		system("cls");
+  	  }
+	else
+	  {
+		printf("Не правильно - вы проиграли\n");
+		return 0;
+	  }
+	printf("Как по-другому называется обойма для патронов?\n1) Магистраль\n2) Универсам\n3) Магазин\n");
+	scanf("%d", &a);
+	if (a == 3)
+	  {
+		printf("Правильно\n");
+		system("cls");
+	  }
+	else
+	  {
+		printf("Не правильно - вы проиграли\n");
+		return 0;
+	  }
+	printf("Чему в пословице не даёт покоя дурная голова?\n1) Ногам\n2) Мозгам\n3) Ушам\n");
+	scanf("%d", &a);
+	if (a == 1)
+	  {
+		printf("Правильно - Вы выйграли!!!\n");
+		
+	  }
+	else
+  	  {
+ 		printf("Не правильно - вы проиграли\n");
+		return 0;
+	  }
+
+	SetConsoleCP(i1);
+	SetConsoleOutputCP(i1);
+
+	return 0;
+}
