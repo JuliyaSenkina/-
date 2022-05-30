@@ -71,7 +71,6 @@ using namespace std;
 
 int main()
 {
-
 	float a;
 	system("cls");
 	cout << "Введите число \n";
