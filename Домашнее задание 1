@@ -105,5 +105,4 @@ int main()
 	cout << "\nПроизведение чисел = ";
 	cout << a * b * c;
 	return 0;
-
 }
