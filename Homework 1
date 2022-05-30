@@ -1,0 +1,109 @@
+//Задание №1
+
+#include <windows.h>
+#include <iostream>             
+
+using namespace std;
+
+int main()
+{
+
+	float a, b, c;
+	system("cls");
+	cout << "Введите 1-ое число \n";
+	cin >> a;
+	cout << "Введите 2-ое число \n";
+	cin >> b;
+	c = (a + b) / 2;
+	cout << "Среднее арифметическое двух чисел \n" << c << "\n";
+	return 0;
+
+}
+
+//Задание №2
+
+#include <windows.h>
+#include <iostream>             
+
+using namespace std;
+
+int main()
+{
+
+	float a;
+	system("cls");
+	cout << "Введите сумму в белорусских рублях \n";
+	cin >> a;
+	cout.precision(6);
+	cout << " Доллары США ";
+	cout << a / 2.5593;
+	cout << "\n Евро ";
+	cout << a / 2.8761;
+	cout << "\n Российские рубли ";
+	cout << a / 0.033862;
+	cout << "\n";
+	return 0;
+
+}
+
+//Задание №3
+
+#include <windows.h>
+#include <iostream>             
+
+using namespace std;
+
+int main()
+{
+
+	system("cls");
+	cout << "\"To be, or not to be!\" \n\\Shakespeare\\\n";
+	return 0;
+}
+
+//Задание №4
+
+#include <windows.h>
+#include <iostream>             
+
+
+using namespace std;
+
+int main()
+{
+
+	float a;
+	system("cls");
+	cout << "Введите число \n";
+	cin >> a;
+	cout << "\nКвадрат числа = ";
+	cout << a * a;
+	return 0;
+
+}
+
+//Задание №5
+
+#include <windows.h>
+#include <iostream>             
+
+using namespace std;
+
+int main()
+{
+
+	float a,b,c;
+	system("cls");
+	cout << "Введите первое число \n";
+	cin >> a;
+	cout << "Введите второе число \n";
+	cin >> b;
+	cout << "Введите третье число \n";
+	cin >> c;
+	cout << "\nСумма чисел = ";
+	cout << a + b + c;
+	cout << "\nПроизведение чисел = ";
+	cout << a * b * c;
+	return 0;
+
+}
